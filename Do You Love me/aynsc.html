@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<!-- <div class="container">
+  <div class="heder">
+    <h1>Registration Form</h1>
+    <form>
+      <label>Password</label>
+      <input type="text" name="" placeholder="enter Password" oncopy="return false" onpaste=" return false">
+      <br>
+      <label>Confirm Password</label>
+      <input type="password" name="" placeholder="enter confirm  Password" 
+      oncopy="alert('you are cpied')" 
+      onpaste=" alert('you judt pest')">
+      
+    </form>
+  </div>
+</div> -->
+</body>
+<script>
+//   setTimeout(() => {
+//   console.log("Hello, World!");
+// }, 2000);
+
+// setInterval(() => {
+//   console.log("Hello, World!");
+// }, 2000);
+
+
+let intervalID = setInterval(() => {
+  console.log("Hello, World!");
+}, 2000);
+
+setTimeout(() => {
+  clearInterval(intervalID); 
+  console.log("Interval stopped");
+}, 6000); 
+</script>
+</html>
+
+
+
+<!-- <script>
+async function fetchData() {
+    try {
+      const response = await fetch('https://api.example.com/data');
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }
+  
+  fetchData();
+  
+</script> -->

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-700 p-10">
+    <div class="max-w-md mx-auto bg-white rounded shadow p-6 ">
+        <h2 class="text-2xl font-bold mb-6 text-center">To-Do List</h2>
+        
+        <form id="todo-form" class="flex mb-4">
+            <input type="text" id="todo-input" class="form-input flex-1 mr-2 px-4 py-2" placeholder="Enter a your task...!" required >
+            <button type="submit" class="btn font-bold px-4 py-2">Add Task</button>
+        </form>
+        
+        <ul id="task-list" class="divide-y divide-gray-300"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

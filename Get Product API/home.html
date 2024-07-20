@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABHI'S Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="Product.js" defer></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+                    <span class="font-bold text-xl">ABHI'S</span>
+                </a>
+                
+                <div class="flex items-center space-x-5">
+                    <div class="hidden md:flex items-center space-x-5">
+                        <a href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">Home</a>
+                        <a id="cart-button" href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900 relative">
+                            Cart
+                            <span id="cart-count" class="ml-1 text-sm bg-yellow-400 text-yellow-900 rounded-full px-2 py-1">0</span>
+                            <div id="cart-dropdown" class="hidden absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-lg overflow-hidden">
+                                <div id="cart-items" class="p-4 text-gray-700">
+                                    No items in cart.
+                                </div>
+                            </div>
+                        </a>
+                        <a id="about-button" href="#" class="py-5 px-3 text-gray-700 hover:text-gray-900">About Us</a>
+                    </div>
+                    <div class="flex items-center space-x-5">
+                        <a id="logout-button" href="#" class="py-2 px-3 bg-yellow-400 text-yellow-900 rounded hover:bg-yellow-300 transition duration-300">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-8xl mx-auto px-5 mt-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6" id="product-container"></div>
+    </div>
+
+    <div id="about-modal" class="fixed z-10 inset-0 overflow-y-auto hidden">
+        <div class="flex items-center justify-center min-h-screen px-4">
+            <div class="bg-white rounded-lg overflow-hidden shadow-xl transform transition-all max-w-lg w-full">
+                <div class="bg-gray-100 p-4 w-full">
+                    <h2 class="text-2xl font-bold text-gray-800">About Us</h2>
+                    <p class="mt-2 text-gray-700">Welcome to ABHI'S Shop! We are dedicated to providing you with the best quality products at the most affordable prices. Our mission is to offer a wide variety of items that cater to all your needs. Thank you for choosing us!</p>
+                </div>
+                <div class="bg-gray-100 p-4 flex justify-end">
+                    <button id="close-about-modal" class="bg-yellow-400 text-yellow-900 px-4 py-2 rounded hover:bg-yellow-300">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-4 px-3 mt-16 mb-4">
+        <div class="container mx-auto flex flex-wrap items-center justify-between">
+            <div class="w-full md:w-1/2 md:text-center md:mb-0 mb-8 p-4">
+                <p class="text-xs text-gray-400 md:text-sm">Copyright 2024 &copy; All Rights Reserved</p>
+            </div>
+            <div class="w-full md:w-1/2 md:text-center md:mb-0 mb-8">
+                <ul class="list-reset flex justify-center flex-wrap text-xs md:text-sm gap-3">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    <li class="mx-4"><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

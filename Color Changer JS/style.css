@@ -1,0 +1,62 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.canvas {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #333;
+}
+
+h2 span {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #111111;
+}
+
+.button {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 50;
+    cursor: pointer;
+}
+
+#grey {
+    background-color: grey;
+}
+
+#white {
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#yellow {
+    background-color: yellow;
+}
+#red{
+    background-color: red;
+}
